@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ver Citas</title>
+    <link
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+
+      body {
+        background-color: #1a1a1a;
+        margin: 0;
+        font-family: 'Arial', sans-serif;
+        color: #ffffff;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 100vh;
+        text-align: center;
+        position: relative;
+      }
+      .header {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        padding: 20px;
+        box-sizing: border-box;
+        position: fixed;
+        top: 0;
+        background-color: #1a1a1a;
+      }
+      .header img {
+        width: 40px;
+        height: 40px;
+      }
+      .title {
+        margin-top: 80px; /* Ajustar para dar más espacio entre el título y los iconos */
+        font-size: 48px;
+        font-family: 'Poppins', sans-serif;
+        color: #fef445;
+      }
+      .list-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 90%;
+        max-width: 600px;
+        margin-top: 20px;
+      }
+      .list-item {
+        background-color: #fef445;
+        color: #1a1a1a;
+        padding: 15px;
+        margin-bottom: 10px;
+        border-radius: 5px;
+        width: 100%;
+        text-align: left;
+        font-size: 18px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      }
+      .list-item:hover {
+        background-color: #e6da3b;
+      }
+      .nav-buttons {
+        display: flex;
+        justify-content: space-between;
+        width: 90%;
+        max-width: 600px;
+        margin-top: auto;
+        padding-bottom: 20px;
+      }
+      .nav-buttons button {
+        width: 48%;
+        padding: 10px;
+        background-color: #fef445;
+        color: #1a1a1a;
+        border: none;
+        border-radius: 5px;
+        font-size: 16px;
+        cursor: pointer;
+      }
+      .nav-buttons button:hover {
+        background-color: #e6da3b;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <img
+        src="https://cdn-icons-png.flaticon.com/128/3870/3870822.png"
+        alt="Icono de Perfil"
+      />
+      <img
+        src="https://cdn-icons-png.flaticon.com/128/4885/4885524.png"
+        alt="Icono de Ajustes"
+      />
+    </div>
+    <h1 class="title">Ver Citas</h1>
+    <div class="list-container">
+      <div class="list-item">Cita 1: 01/08/2024 - 10:00 AM - Cliente A</div>
+      <div class="list-item">Cita 2: 02/08/2024 - 11:00 AM - Cliente B</div>
+      <!-- Puedes agregar más citas aquí -->
+    </div>
+    <div class="nav-buttons">
+      <button onclick="window.history.back();">Atrás</button>
+      <button onclick="window.location.href='main.html';">
+        Pantalla Principal
+      </button>
+    </div>
+  </body>
+</html>

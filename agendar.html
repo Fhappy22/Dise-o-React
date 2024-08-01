@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Agendar Cita</title>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+
+      body {
+        background-color: #1a1a1a;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        font-family: Arial, sans-serif;
+        color: #ffffff;
+        text-align: center;
+        position: relative;
+      }
+      .header {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        padding: 20px;
+        box-sizing: border-box;
+        position: absolute;
+        top: 0;
+        background-color: #1a1a1a;
+      }
+      .header img {
+        width: 40px;
+        height: 40px;
+      }
+      .title {
+        margin-top: 100px; /* Espacio adecuado para el título */
+        font-size: 48px;
+        font-family: 'Poppins', sans-serif;
+        color: #fef445;
+      }
+      .subtitle {
+        margin-top: 20px;
+        font-size: 24px;
+        font-family: 'Poppins', sans-serif;
+        color: #fef445;
+      }
+      .main-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 90%;
+        max-width: 600px;
+        margin-top: 50px; /* Espacio adicional para centrar el contenido */
+      }
+      .textarea-container {
+        width: 100%;
+        margin-top: 20px;
+      }
+      .textarea {
+        width: 100%;
+        height: 200px;
+        padding: 15px;
+        background-color: #ffffff;
+        color: #1a1a1a;
+        border: 1px solid #cccccc;
+        border-radius: 8px;
+        font-size: 16px;
+        resize: none;
+        font-family: Arial, sans-serif;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      }
+      .file-upload {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 20px;
+        padding: 15px;
+        border: 2px dashed #fef445;
+        border-radius: 8px;
+        background-color: #ffffff;
+        color: #1a1a1a;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      }
+      .file-upload input[type='file'] {
+        display: none;
+      }
+      .file-upload label {
+        cursor: pointer;
+        font-size: 16px;
+      }
+      .file-upload img {
+        width: 24px;
+        height: 24px;
+        margin-right: 10px;
+      }
+      .nav-buttons {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        max-width: 600px;
+        margin-top: 30px;
+        padding: 20px 0;
+      }
+      .nav-buttons button {
+        width: 48%;
+        padding: 15px;
+        background-color: #fef445;
+        color: #1a1a1a;
+        border: none;
+        border-radius: 8px;
+        font-size: 16px;
+        cursor: pointer;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      }
+      .nav-buttons button:hover {
+        background-color: #e6da3b;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <img
+        src="https://cdn-icons-png.flaticon.com/128/3870/3870822.png"
+        alt="Icono de Perfil"
+      />
+      <img
+        src="https://cdn-icons-png.flaticon.com/128/4885/4885524.png"
+        alt="Icono de Ajustes"
+      />
+    </div>
+    <h1 class="title">Agendar Cita</h1>
+    <div class="main-content">
+      <div class="textarea-container">
+        <h2 class="subtitle">Descripción del Caso</h2>
+        <textarea
+          class="textarea"
+          placeholder="Escriba aquí la descripción de su caso..."
+        ></textarea>
+      </div>
+      <div class="file-upload">
+        <img
+          src="https://cdn-icons-png.flaticon.com/128/3391/3391036.png"
+          alt="Icono de Subida"
+        />
+        <label for="file-upload">Subir Archivo</label>
+        <input type="file" id="file-upload" />
+      </div>
+    </div>
+    <div class="nav-buttons">
+      <button onclick="window.history.back();">Atrás</button>
+      <button onclick="window.location.href='verCitas.html';">Continuar</button>
+    </div>
+  </body>
+</html>
